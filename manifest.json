@@ -1,0 +1,17 @@
+{	
+    "manifest_version": 2,
+    "name": "N-Gone - NoGermanOnNcorE",
+    "version": "0.0.1",
+    "description": "No german movies on ncore",
+    "icons": {"16": "icon_16.ico"},
+    "browser_action":  
+    { 
+        "popup": "popup.html"
+    },
+    "content_scripts": [
+    {
+      "matches": ["https://ncore.cc/*"],
+      "js": ["contentscript.js"]
+    }
+  ]
+}
